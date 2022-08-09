@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/heap-visualization/static/css/main.7c8f27b7.css",
+    "main.js": "/heap-visualization/static/js/main.6a72f461.js",
+    "static/media/logo.png": "/heap-visualization/static/media/logo.b35b1b6ec5059ef4e00c.png",
+    "index.html": "/heap-visualization/index.html",
+    "main.7c8f27b7.css.map": "/heap-visualization/static/css/main.7c8f27b7.css.map",
+    "main.6a72f461.js.map": "/heap-visualization/static/js/main.6a72f461.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c8f27b7.css",
+    "static/js/main.6a72f461.js"
+  ]
+}
