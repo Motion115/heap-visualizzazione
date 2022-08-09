@@ -1,0 +1,8 @@
+#view2 {
+    height: 260px;
+    /* background-color: yellow; */
+}
+
+#view2 > h3 {
+    margin-left: 5px;
+}
