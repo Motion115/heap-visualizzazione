@@ -1,6 +1,6 @@
 # Heap Visualization
 
-This is a school project aiming do deepen the understanding of the intricate data structue heap through visualization.
+This is a school project aiming to deepen the understanding of the intricate data structure heap through visualization of heap sort.
 
 The application is built using React and d3, while the UI design are from antd.
 
