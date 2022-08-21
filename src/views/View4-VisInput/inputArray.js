@@ -55,6 +55,14 @@ const draw = (props) => {
         .attr("y", height / 2 - margin.top / 2)
         .attr("fill", "RGB(255, 255, 255)")
         .attr("font-size", "18")
+
+    svg.selectAll("circle")
+        .on('mouseenter', function (actual, i) {
+            d3.select(this).attr('opacity', 0.6)
+        })
+        .on('mouseleave', function (actual, i) {
+            d3.select(this).attr('opacity', 1)
+        })
 }
 
 function colorGradient(d) {

@@ -6,7 +6,7 @@ export default class View6_OutputArray extends Component {
         const data = this.props.data;
         return (
             <div id='view4' className='pane'>
-                <div className='header'>Output Array</div>
+                <div className='header'>Sorted Array</div>
                 <div>
                     <OutputNodeArray data={data} width={1000} height={80}/>
                 </div>

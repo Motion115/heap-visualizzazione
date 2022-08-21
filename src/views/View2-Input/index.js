@@ -3,6 +3,7 @@ import { Button, Input, InputNumber} from 'antd';
 import { Col, Row } from 'antd';
 import { Typography } from 'antd';
 import './view2-Input.css';
+import {LoginOutlined, LogoutOutlined, ReloadOutlined, EnterOutlined} from '@ant-design/icons';
 
 const {Paragraph} = Typography;
 
@@ -46,11 +47,11 @@ export default class View2Input extends Component {
                   <Col span={11} offset={1}>
                   <Input.Group compact>
                   <InputNumber onChange={this.onChange} />
-                  <Button type="primary" onClick={this.submit} disabled={this.state.isPushDisable}>Push</Button>
+                  <Button type="primary" onClick={this.submit} disabled={this.state.isPushDisable}><LoginOutlined rotate={90}/>Push</Button>
                   </Input.Group>
                   </Col>                  
                   <Col span = {11} offset={1}>
-                  <Button type="primary" size={20} onClick={this.setAbility} disabled={this.state.isSwitchDisable}>Input Complete</Button>
+                  <Button type="primary" size={20} onClick={this.setAbility} disabled={this.state.isSwitchDisable}><EnterOutlined />Input Complete</Button>
                   </Col>
                 </Row>
                 <Row>
@@ -61,13 +62,13 @@ export default class View2Input extends Component {
                 </Row>
                 <Row>
                   <Col span = {24} offset={1}> 
-                  <Button type="primary" size={20} onClick={this.props.pop} disabled={this.state.isPopDisable}>Pop</Button> 
+                  <Button type="primary" size={20} onClick={this.props.pop} disabled={this.state.isPopDisable}><LogoutOutlined rotate={270} />Pop</Button> 
                   </Col>
                 </Row>
                 <Paragraph></Paragraph>
                 <Row>
                   <Col span = {24} offset={1}> 
-                  <Button type="primary" size={20} href="">Refresh</Button> 
+                  <Button type="primary" size={20} href=""><ReloadOutlined />Refresh</Button> 
                   </Col>
                 </Row>
             </div>

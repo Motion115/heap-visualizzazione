@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import heapObject from './data';
+import heapObject from './data/datastructure';
 import { Layout } from 'antd';
 import View1 from './views/View1';
 import View2Input from './views/View2-Input';
@@ -15,6 +15,10 @@ const { Sider, Content } = Layout;
 export default class Dashboard extends Component {
 
     push = (x) => {
+        if (heapObject.array.length > 30) {
+            alert("Exceeded Visualization Capability!")
+            return
+        }
         heapObject.push(x)
         heapObject.pushBack(x)
         this.forceUpdate()
@@ -56,7 +60,6 @@ export default class Dashboard extends Component {
                         <Content style={{ height: 320 }}>
                             <View5 data={heapObject.export()}/>
                         </Content>
-
                     </Layout>
                 </Layout>
             </div>

@@ -87,6 +87,14 @@ const draw = (props) => {
         .attr("y",(_, i) => calculateLayer(i) * 40 + 5)
         .attr("fill", "RGB(255, 255, 255)")
         .attr("font-size", "18")
+    
+    svg.selectAll("circle")
+        .on('mouseenter', function (actual, i) {
+            d3.select(this).attr('opacity', 0.6)
+        })
+        .on('mouseleave', function (actual, i) {
+            d3.select(this).attr('opacity', 1)
+        })
 }
 
 function calculatePosition(index, width) {
